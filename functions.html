@@ -1,0 +1,1318 @@
+<html lang="en">
+
+<head>
+    <title>Azure</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+        content="The best FREE hacks for Roblox, completely virus-free! Roblox exploits, hacks, scripts, and tools!" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.3.5/tailwind.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+</head>
+<body>
+    <div class="Functions">
+        <div class="pb-12 disappear">
+            <div class="items-center justify-between flex bg-tone px-12 py-4 my-4 mx-auto shadow-2xl w-11/12 min-w-2xl">
+                <div class="text-2xl text-white font-semibold inline-flex items-center"><span>Azure</span></div>
+                <div class="items-center flex-wrap">
+                    <ul class="flex text-white">
+                        <li class="ml-5 px-2 py-1 hover:text-gray-200 focus:opacity-70"><a href="https://azureexploit.com">Exploits</a>
+                        </li>
+                        <li class="ml-5 px-2 py-1 hover:text-gray-200 focus:opacity-70"><a href="./scripts.html">Scripts</a>
+                        </li>
+                        <li class="ml-5 px-2 py-1 hover:text-gray-200 focus:opacity-70"><a
+                                href="./functions.html">Functions</a>
+                        </li>
+                        <li class="ml-5 px-2 py-1 hover:text-gray-200 focus:opacity-70">
+                            <a href="https://discord.gg/vVHsxrun2v">Discord</a>
+                        </li>
+                        <li
+                            class="ml-5 px-3 py-1 group border border-gray-300 rounded text-white hover:text-gray-200 focus:opacity-70">
+                            <a href="https://up-to-down.net/326216/azure-key-system">Get Key</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section id="functions">
+            <div class="flex flex-flow-col auto-cols-auto flex-wrap justify pb-9">
+                <div class="w-11/12 items-center justify-center mx-auto">
+                    <h1 class="text-3xl font-semibold pb-10 text-center">Documentation</h1>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span>&lt;</span><span style="color: rgb(78, 201, 176);">bool</span><span>&gt; isluau(&lt;</span><span style="color: rgb(78, 201, 176);">void</span><span>&gt;)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Returns true if the game is running LuaU</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span>&lt;</span><span style="color: rgb(78, 201, 176);">string</span><span>&gt; getnamecallmethod(&lt;</span><span style="color: rgb(78, 201, 176);">void</span><span>&gt;)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Returns the namecall method if the function is called in an
+                            __namecall metatable hook</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">table</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> getgenv(</span><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span style="color: rgb(155, 155, 155);">&gt;</span><span>)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Returns the global environment in a table</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">table</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> getrenv(</span><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span style="color: rgb(155, 155, 155);">&gt;</span><span>)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Returns Roblox's environment in a table</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span style="color: rgb(86, 156, 214);">&lt;table&gt;</span><span> </span><span style="color: rgb(78, 201, 176);">getreg</span><span>(</span><span style="color: rgb(86, 156, 214);">&lt;void&gt;</span><span>)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Returns Roblox's lua registry in a table</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">table</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> getgc(</span><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span style="color: rgb(155, 155, 155);">&gt;</span><span>)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Returns Roblox's gc functions/table in a table</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span style="color: rgb(156, 220, 254);">&lt;table&gt;</span><span> getsenv(</span><span style="color: rgb(156, 220, 254);">&lt;LocalScript, ModuleScript&gt;</span><span> Script)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Returns the environment of Script and returns nil if the script
+                            is
+                            not running</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">table</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> getrawmetatable(</span><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">table</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> value)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Retrieve the metatable of value regardless of value's
+                            metatable's
+                            __metatable field. Returns nil if it doesn't exist</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">bool</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> setrawmetatable(</span><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">object</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> o, </span><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">table</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> mt)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Sets o's metatable to mt even if the __metatable field exists
+                            in
+                            o's metatable</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">table</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> getflags(</span><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span style="color: rgb(155, 155, 155);">&gt;</span><span>)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Returns loaded fflags in a table</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span>&lt;</span><span style="color: rgb(78, 201, 176);">string</span><span>&gt; getclipboard(&lt;</span><span style="color: rgb(78, 201, 176);">void</span><span>&gt;)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Returns whatever is copied on the clipboard as a string</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span>&lt;</span><span style="color: rgb(189, 99, 197);">string</span><span>&gt; </span><span style="color: rgb(220, 220, 220);">setclipboard</span><span style="color: rgb(220, 220, 220);">( ... )</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Sets clipboard data to all given arguments</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span style="color: rgb(189, 99, 197);">&lt;bool&gt;</span><span> isreadonly(</span><span style="color: rgb(189, 99, 197);">&lt;table&gt;</span><span> </span><span style="color: rgb(78, 201, 176);">table</span><span>)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Return's table's readonly value</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span style="color: rgb(189, 99, 197);">&lt;void&gt;</span><span> setreadonly(</span><span style="color: rgb(189, 99, 197);">&lt;table&gt;</span><span> </span><span style="color: rgb(78, 201, 176);">table</span><span>, </span><span style="color: rgb(189, 99, 197);">&lt;bool&gt;</span><span> val)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Sets table's read-only value to val</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span>&lt;</span><span style="color: rgb(78, 201, 176);">bool</span><span>&gt; checkcaller(&lt;</span><span style="color: rgb(78, 201, 176);">void</span><span>&gt;)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Return true if the current thread was not called from game
+                            script
+                        </p>
+                    </div>
+                    <h1 class="text-3xl font-semibold pt-5 pb-10 text-center">Keyboard/Mouse Library</h1>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> keypress(</span><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">number</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> keycode)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Simulates a key press for the specified keycode</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> keyrelease(</span><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">number</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> key)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Releases key on the keyboard</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span>&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span>&gt; mouse1click(&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span>&gt;)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Simulates a left mouse button click</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span>&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span>&gt; mouse1press(&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span>&gt;)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Simulates a left mouse button press without releasing it</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span>&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span>&gt; mouse1release(&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span>&gt;)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Simulates a left mouse button release</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span>&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span>&gt; mouse2click(&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span>&gt;)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Simulates a full right mouse button click</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span>&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span>&gt; mouse2press(&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span>&gt;)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Clicks down on the right mouse button</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span>&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span>&gt; mouse2release(&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span>&gt;)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Simulates a right mouse button release</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> mousescroll(</span><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">number</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> px)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Scrolls the mouse wheel virtually by px pixels</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> mousemoverel(</span><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">number</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> x, </span><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">number</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> y)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Moves the mouse cursor relatively to the current mouse position
+                            by
+                            coordinates x and y</p>
+                    </div>
+                    <div class="w-11/12 items-center justify-center mx-auto">
+                        <pre class="code-block"
+                            style="display: block; overflow-x: auto; padding: 1.5em; background: rgb(27, 27, 27); color: rgb(220, 220, 220); font-family: monospace; font-size: 0.9em;"><code class="language-function lua(hljs) {
+    const OPENING_LONG_BRACKET = '\\[=*\\[';
+    const CLOSING_LONG_BRACKET = '\\]=*\\]';
+    const LONG_BRACKETS = {
+      begin: OPENING_LONG_BRACKET,
+      end: CLOSING_LONG_BRACKET,
+      contains: ['self']
+    };
+    const COMMENTS = [hljs.COMMENT('--(?!' + OPENING_LONG_BRACKET + ')', '$'), hljs.COMMENT('--' + OPENING_LONG_BRACKET, CLOSING_LONG_BRACKET, {
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    })];
+    return {
+      name: 'Lua',
+      keywords: {
+        $pattern: hljs.UNDERSCORE_IDENT_RE,
+        literal: &quot;true false nil&quot;,
+        keyword: &quot;and break do else elseif end for goto if in local not or repeat return then until while&quot;,
+        built_in: // Metatags and globals:
+        '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' + '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' + // Standard methods and properties:
+        'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' + 'module next pairs pcall print rawequal rawget rawset require select setfenv ' + 'setmetatable tonumber tostring type unpack xpcall arg self ' + // Library methods and properties (one line per library):
+        'coroutine resume yield status wrap create running debug getupvalue ' + 'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' + 'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' + 'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' + 'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' + 'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' + 'table setn insert getn foreachi maxn foreach concat sort remove'
+      },
+      contains: COMMENTS.concat([{
+        className: 'function',
+        beginKeywords: 'function',
+        end: '\\)',
+        contains: [hljs.inherit(hljs.TITLE_MODE, {
+          begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+        }), {
+          className: 'params',
+          begin: '\\(',
+          endsWithParent: true,
+          contains: COMMENTS
+        }].concat(COMMENTS)
+      }, hljs.C_NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, {
+        className: 'string',
+        begin: OPENING_LONG_BRACKET,
+        end: CLOSING_LONG_BRACKET,
+        contains: [LONG_BRACKETS],
+        relevance: 5
+      }])
+    };
+  }" style="white-space: pre;"><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">void</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> mousemoveabs(</span><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">number</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> x, </span><span style="color: rgb(155, 155, 155);">&lt;</span><span style="color: rgb(86, 156, 214);">number</span><span style="color: rgb(155, 155, 155);">&gt;</span><span> y)</span></code></pre>
+                        <p class="pt-2 pb-6 text-base">• Moves the mouse to the x and y coordinates in pixels from the
+                            top
+                            left of the window</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="pb-40"></div>
+        <footer class="bg-tone pt-4 pb-8 xl:pt-8">
+            <div
+                class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 text-gray-400 dark:text-gray-300">
+                <div class="text-center sm:pt-1 flex items-center justify-center">
+                    <p>Copyright © 2021 Azure Inc. All rights reserved.</p>
+                </div>
+                <p class="text-center opacity-50 flex items-center justify-center sm:pt-0.5">Made with ❤ by WendoJ</p>
+            </div>
+        </footer>
+    </div>
+</body>
